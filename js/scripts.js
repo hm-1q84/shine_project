@@ -1,0 +1,11 @@
+/* инициализация карусели отзывов   */
+const carousel = document.querySelector('#reviewsCarousel');
+const bsCarousel = new bootstrap.Carousel(carousel);
+
+// обработка клика по карточке — листаем вперёд
+document.querySelectorAll('.review-card').forEach(card => {
+    card.addEventListener('click', () => {
+        bsCarousel.next();
+    });
+});
+

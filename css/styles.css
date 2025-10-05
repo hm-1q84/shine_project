@@ -109,6 +109,14 @@ h2 {
 }
 
 /* Стили для main секции */
+.main {
+  /* Наши услуги */
+  /* Почему именно мы? */
+  /* Лучшие клинеры */
+  /* Результаты до и после */
+  /* Отзывы клиентов */
+  /* Часто задаваемые вопросы */
+}
 .main .services {
   margin-top: 200px;
 }
@@ -167,4 +175,122 @@ h2 {
 }
 .main .cleaners {
   margin-top: 200px;
+}
+.main .cleaners__header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.main .cleaners .employee__name {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.main .results {
+  margin-top: 200px;
+}
+.main .results__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .results__header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.main .results__row {
+  margin-bottom: 40px;
+}
+.main .results .result__image {
+  width: 100%;
+}
+.main .results__cta {
+  width: 220px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #519BFF;
+  color: white;
+}
+.main .results__cta:hover {
+  background-color: #0261E1;
+  transition: 0.3s;
+}
+.main .reviews {
+  margin-top: 200px;
+}
+.main .reviews__header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.main .reviews .review-card {
+  max-width: 800px;
+  border: 2px solid #4a8cff;
+  border-radius: 20px;
+  padding: 30px 40px;
+}
+.main .reviews .review-card:hover {
+  cursor: pointer;
+}
+.main .reviews .review-card__content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .main .reviews .review-card__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.main .reviews .review-card__photo img {
+  width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.main .reviews .review-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .main .reviews .review-card__top {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.main .reviews .review-card__name {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+.main .reviews .review-card__service {
+  color: #777;
+  font-size: 16px;
+}
+.main .reviews .review-card__quote {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+.main .reviews .carousel-indicators {
+  position: static;
+  margin-top: 20px;
+}
+.main .reviews .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c2c2c2;
+}
+.main .reviews .carousel-indicators button.active {
+  background-color: #4a8cff;
+}
+.main .faq {
+  margin-top: 200px;
+}
+.main .faq__header {
+  text-align: center;
+  margin-bottom: 80px;
 }/*# sourceMappingURL=styles.css.map */
