@@ -116,6 +116,7 @@ h2 {
   /* Результаты до и после */
   /* Отзывы клиентов */
   /* Часто задаваемые вопросы */
+  /* Контакты */
 }
 .main .services {
   margin-top: 200px;
@@ -293,4 +294,78 @@ h2 {
 .main .faq__header {
   text-align: center;
   margin-bottom: 80px;
+}
+.main .faq .accordion {
+  border: 2px solid #519BFF;
+  border-radius: 33px;
+}
+.main .faq .accordion-button {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main .faq .accordion-item {
+  border: none; /* убираем стандартную границу */
+}
+.main .faq .accordion-item:not(:last-child) {
+  border-bottom: 2px solid #519BFF; /* разделитель между элементами */
+}
+.main .faq .accordion-item:first-child {
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
+}
+.main .faq .accordion-item:first-child .accordion-button {
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
+}
+.main .faq .accordion-item:last-child {
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
+}
+.main .faq .accordion-item:last-child .accordion-button[aria-expanded=false] {
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
+}
+.main .contacts {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.main .contacts__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.main .contacts__subheader {
+  text-align: center;
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main .contacts__content {
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .contacts__content .essentials {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.main .contacts__content .essentials .phone, .main .contacts__content .essentials .email {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+.main .contacts__content .address {
+  margin: 0;
+}
+.main .contacts__content .social-media {
+  display: flex;
+  gap: 50px;
+}
+.main .contacts__content .map {
+  width: 400px;
+  height: 220px;
 }/*# sourceMappingURL=styles.css.map */

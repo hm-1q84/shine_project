@@ -314,6 +314,82 @@ h2 {
             text-align: center;
             margin-bottom: 80px;
         }
+        .accordion {
+            border: 2px solid $dark-blue;
+            border-radius: 33px;
+            &-button {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            &-item {
+                border: none; /* убираем стандартную границу */
+                &:not(:last-child) {
+                    border-bottom: 2px solid $dark-blue; /* разделитель между элементами */
+                }
+                &:first-child {
+                    border-top-left-radius: 33px;
+                    border-top-right-radius: 33px;
+                    .accordion-button {
+                        border-top-left-radius: 33px;
+                        border-top-right-radius: 33px;
+                    }
+                }
+                &:last-child {
+                    border-bottom-left-radius: 33px;
+                    border-bottom-right-radius: 33px;
+                    .accordion-button[aria-expanded="false"] {
+                        border-bottom-left-radius: 33px;
+                        border-bottom-right-radius: 33px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Контакты */
+    .contacts {
+        margin-top: 200px;
+        margin-bottom: 100px;
+        &__header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__subheader {
+            text-align: center;
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__content {
+            height: 460px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .essentials {
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+                .phone, .email {
+                    margin: 0;
+                    font-size: 24px;
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+            .address {
+                margin: 0;
+            }
+            .social-media {
+                display: flex;
+                gap: 50px;
+            }
+            .map {
+                width: 400px;
+                height: 220px;
+            }
+        }
     }
 
 }
