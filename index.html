@@ -376,11 +376,51 @@
                         </div>
                         <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f5a3db945aa5ed650c46a23dfc0eee69a845ba75d934b2688a488171d3e8aa0&amp;source=constructor" frameborder="0"></iframe>
                     </div>
+
+                    <form class="contacts__form col-lg-5" action="#" method="post"> 
+                        <input class="form-input name" type="text" id="name" name="name" placeholder="Имя" required>
+                        <input class="form-input phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                        <textarea class="form-input comment" id="comment" name="comment" rows="3" placeholder="Комментарий"></textarea>
+
+                        <div class="form__checkbox">
+                            <input class="checkbox" name="checkbox" type="checkbox" checked required>
+                            <span>Я согласен с условиями <a href="#">политики конфиденциальности</a></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Оставить заявку</button>
+                    </form>
                 </div>
             </div>
         </section>
 
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="navbar row">
+                <div class="col-lg-2">
+                    <img src="img/logo.svg" alt="logo" class="navbar__logo">
+                </div>
+                <div class="col-lg-5 navbar__menu">
+                    <a href="#" class="navbar__link">Услуги</a>
+                    <a href="#" class="navbar__link">Отзывы</a>
+                    <a href="#" class="navbar__link">Стоимость</a>
+                    <a href="#" class="navbar__link">Контакты</a>
+                </div>
+                <div class="col-lg-5 navbar__additional">
+                    <a href="#" class="navbar__link">Политика конфиденциальности</a>
+                    <a href="#" class="navbar__link">Создание сайта</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- 
+        Доделать:
+        – Настрой якорные ссылки из хедера и футера на блоки и из кнопок на форму в контактах
+        – Добавь плавную прокрутку к якорным ссылкам
+        – закрепи хедер при скролле (может бахнуть ему при скролле нижнюю границу как верхняя у футера?)
+    -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
