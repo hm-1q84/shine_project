@@ -9,3 +9,6 @@ document.querySelectorAll('.review-card').forEach(card => {
     });
 });
 
+function CTAscrollToContacts() {
+    document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+}

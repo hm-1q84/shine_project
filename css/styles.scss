@@ -57,6 +57,13 @@ h2 {
 .header {
     margin-top: 10px;
     .navbar {
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+        // z-index: 1000;
+        // background-color: white; // обязательно, иначе фон может быть прозрачным
+        // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // лёгкая тень
         &__menu {
             display: flex;
             gap: 50px;
