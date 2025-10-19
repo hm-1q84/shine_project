@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* Manrope for headers */
+@font-face {
+  font-family: "Manrope";
+  src: url("/static/fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* variable font range */
+  font-style: normal;
+  font-display: swap;
+}
+/* Mulish for body text */
+@font-face {
+  font-family: "Mulish";
+  src: url("/static/fonts/Mulish/Mulish-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Use Mulish for base text */
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+}
+
+/* Use Manrope for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/* Общие стили */
+.btn {
+  border-radius: 12px;
+}
+.btn:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=general.css.map */

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* Manrope for headers */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* variable font range */
+  font-style: normal;
+  font-display: swap;
+}
+/* Mulish for body text */
+@font-face {
+  font-family: "Mulish";
+  src: url("/fonts/Mulish-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Use Mulish for base text */
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+}
+
+/* Use Manrope for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/* Общие стили */
+.btn {
+  border-radius: 12px;
+  width: 220px;
+  height: 50px;
+  background-color: #519BFF;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #0261E1;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.homepage-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.homepage-link__content {
+  color: #000;
+  text-decoration: none;
+}
+.homepage-link__content:hover {
+  color: #0261E1;
+  transition: 0.3s;
+}
+
+.header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.record {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #519BFF;
+}
+.record--header {
+  font-weight: 700;
+  font-size: 20px;
+}
+.record__dt {
+  display: flex;
+  justify-content: end;
+}
+
+.account__info {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.account__sign-out {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #000;
+  text-decoration: none;
+}
+.account__sign-out:hover {
+  color: #0261E1;
+  transition: 0.3s;
+}/*# sourceMappingURL=orders.css.map */

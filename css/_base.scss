@@ -1,0 +1,73 @@
+@use 'variables'; //импорт переменных
+
+/* Manrope for headers */
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* variable font range */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mulish for body text */
+@font-face {
+  font-family: 'Mulish';
+  src: url('/fonts/Mulish-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Use Mulish for base text */
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+}
+
+/* Use Manrope for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* Общие стили */
+.btn {
+    border-radius: 12px;
+    width: 220px;
+    height: 50px;
+    background-color: variables.$dark-blue;
+    color: white;
+    border: none;
+    font-size: 18px;
+    &:hover {
+        cursor:pointer;
+        background-color: variables.$dark-blue-hover;
+        transition: 0.3s;
+        color: #fff;
+    }
+}
+
+.homepage-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    &__content {
+        color: variables.$black;
+        text-decoration: none;
+        &:hover {
+            color: variables.$dark-blue-hover;
+            transition: 0.3s;
+        }
+    }
+}

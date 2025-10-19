@@ -9,6 +9,7 @@ document.querySelectorAll('.review-card').forEach(card => {
     });
 });
 
+// плавный скролл к секции контактов (форме оставления заявки)
 function CTAscrollToContacts() {
     document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
 }

@@ -2,7 +2,7 @@
 /* Manrope for headers */
 @font-face {
   font-family: "Manrope";
-  src: url("/static/fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900; /* variable font range */
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 /* Mulish for body text */
 @font-face {
   font-family: "Mulish";
-  src: url("/static/fonts/Mulish/Mulish-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Mulish-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -41,9 +41,32 @@ h2 {
 /* Общие стили */
 .btn {
   border-radius: 12px;
+  width: 220px;
+  height: 50px;
+  background-color: #519BFF;
+  color: white;
+  border: none;
+  font-size: 18px;
 }
 .btn:hover {
   cursor: pointer;
+  background-color: #0261E1;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.homepage-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.homepage-link__content {
+  color: #000;
+  text-decoration: none;
+}
+.homepage-link__content:hover {
+  color: #0261E1;
+  transition: 0.3s;
 }
 
 /* Стили для header и hero секции */
@@ -70,6 +93,8 @@ h2 {
 .header .navbar__cta .cta {
   width: 180px;
   height: 40px;
+  border-radius: 12px;
+  background-color: #fff;
   border: 2px solid #519BFF;
 }
 .header .navbar__cta .cta:hover {
@@ -97,15 +122,7 @@ h2 {
   margin-top: 10px;
 }
 .header .hero__cta {
-  width: 220px;
-  height: 50px;
   margin-top: 70px;
-  background-color: #519BFF;
-  color: white;
-}
-.header .hero__cta:hover {
-  background-color: #0261E1;
-  transition: 0.3s;
 }
 
 /* Стили для main секции */
@@ -204,15 +221,7 @@ h2 {
   width: 100%;
 }
 .main .results__cta {
-  width: 220px;
-  height: 50px;
   margin-top: 10px;
-  background-color: #519BFF;
-  color: white;
-}
-.main .results__cta:hover {
-  background-color: #0261E1;
-  transition: 0.3s;
 }
 .main .reviews {
   margin-top: 200px;

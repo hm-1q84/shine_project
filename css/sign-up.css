@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* Manrope for headers */
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* variable font range */
+  font-style: normal;
+  font-display: swap;
+}
+/* Mulish for body text */
+@font-face {
+  font-family: "Mulish";
+  src: url("/fonts/Mulish-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Use Mulish for base text */
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+}
+
+/* Use Manrope for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/* Общие стили */
+.btn {
+  border-radius: 12px;
+  width: 220px;
+  height: 50px;
+  background-color: #519BFF;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #0261E1;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.homepage-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.homepage-link__content {
+  color: #000;
+  text-decoration: none;
+}
+.homepage-link__content:hover {
+  color: #0261E1;
+  transition: 0.3s;
+}
+
+.sign-up-form {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #D6E7FF;
+  padding: 40px 35px;
+  border-radius: 25px;
+}
+.sign-up-form__input {
+  width: 100%;
+  border-radius: 9px;
+  border: none;
+  outline: none;
+  height: 60px;
+  padding: 0 20px;
+}
+.sign-up-form__input:focus {
+  box-shadow: 0 0 2px #519BFF;
+}
+.sign-up-form__submit {
+  margin-top: 40px;
+}/*# sourceMappingURL=sign-up.css.map */

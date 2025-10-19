@@ -1,0 +1,42 @@
+@use 'variables'; //импорт переменных
+@use 'base'; //общие стили
+
+.header {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.record {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid variables.$dark-blue;
+    &--header {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    &__dt {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.account {
+    &__info {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    &__sign-out {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        color: variables.$black;
+        text-decoration: none;
+        &:hover {
+            color: variables.$dark-blue-hover;
+            transition: 0.3s;
+        }
+    }
+}
