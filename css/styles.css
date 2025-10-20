@@ -121,6 +121,11 @@ h2 {
 .header .hero__image {
   margin-top: 10px;
 }
+@media (max-width: 1199px) {
+  .header .hero__image {
+    width: 100%;
+  }
+}
 .header .hero__cta {
   margin-top: 70px;
 }
@@ -150,6 +155,12 @@ h2 {
   padding-bottom: 10px;
   border-top: 2px solid #519BFF;
 }
+@media (max-width: 991px) {
+  .main .services__row {
+    padding: 0;
+    border: none;
+  }
+}
 .main .services__row:last-child {
   border-bottom: 2px solid #519BFF;
 }
@@ -159,12 +170,32 @@ h2 {
 .main .services__row .option:last-child {
   text-align: right; /* последний элемент справа */
 }
+@media (max-width: 991px) {
+  .main .services__row .option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid #519BFF;
+  }
+  .main .services__row .option br {
+    display: none; /* убираем переносы строк на маленьких экранах */
+  }
+}
 .main .features {
   margin-top: 200px;
 }
 .main .features__header {
   text-align: center;
   margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .main .features .feature {
+    margin-bottom: 50px;
+  }
 }
 .main .features .feature__icon {
   position: relative;
@@ -180,6 +211,11 @@ h2 {
   width: 80%; /* подгони под макет */
   height: auto;
   z-index: 0;
+}
+@media (max-width: 991px) {
+  .main .features .feature__blob {
+    width: 60%;
+  }
 }
 .main .features .feature__title {
   font-size: 24px;
@@ -197,6 +233,11 @@ h2 {
 .main .cleaners__header {
   text-align: center;
   margin-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .main .cleaners .employee {
+    margin-bottom: 30px;
+  }
 }
 .main .cleaners .employee__name {
   margin-top: 15px;
@@ -444,6 +485,12 @@ h2 {
   padding: 65px 0;
   border-top: 2px solid #519BFF;
 }
+@media (max-width: 1999px) {
+  .footer .navbar__logo-image {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+}
 .footer .navbar__menu {
   display: flex;
   gap: 30px;
@@ -453,6 +500,12 @@ h2 {
   display: flex;
   gap: 30px;
   justify-content: end;
+}
+@media (max-width: 1999px) {
+  .footer .navbar__additional {
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 .footer .navbar__link {
   color: #000;
