@@ -12,8 +12,9 @@
     <header class="header">
         <div class="container">
             <nav class="navbar row">
-                <div class="col-lg-2">
-                    <img src="img/logo.svg" alt="logo" class="navbar__logo">
+
+                <div class="col-lg-2 navbar__logo">
+                    <img src="img/logo.svg" alt="logo">
                 </div>
                 <div class="col-lg-7 navbar__menu">
                     <a href="#services" class="navbar__link">Услуги</a>
@@ -25,6 +26,28 @@
                 <div class="col-lg-3 navbar__cta">
                     <button class="cta" onclick="CTAscrollToContacts()">Оставить заявку</button>
                 </div>
+
+                <div class="mobile-version">
+                    <!-- Кнопка-бургер -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img src="img/logo.svg" alt="logo" class="navbar__logo-mobile">
+
+                    <!-- Контент, который схлопывается -->
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#results">Результаты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sign-in.html">Заявки</a></li>
+                        </ul>
+                        <button class="btn cta ms-lg-3" onclick="CTAscrollToContacts()">Оставить заявку</button>
+                    </div>
+                </div>
+
             </nav>
             <div class="hero">
                 <h1 class="hero__title">Доверьте уборку нам!</h1>
@@ -153,7 +176,9 @@
         <section class="results" id="results">
             <div class="container results__container">
                 <h2 class="results__header">Результаты до и после</h2>
-                <div class="row results__row">
+
+                <!-- ======= Десктопная версия (сетка) ======= -->
+                <div class="row results__row results__row--desktop">
                     <div class="col-lg-6 result">
                         <img src="img/result-1.png" alt="result-1" class="result__image">
                     </div>
@@ -161,7 +186,7 @@
                         <img src="img/result-2.png" alt="result-2" class="result__image">
                     </div>
                 </div>
-                <div class="row results__row">
+                <div class="row results__row results__row--desktop">
                     <div class="col-lg-6 result">
                         <img src="img/result-3.png" alt="result-3" class="result__image">
                     </div>
@@ -169,6 +194,38 @@
                         <img src="img/result-4.png" alt="result-4" class="result__image">
                     </div>
                 </div>
+
+                <!-- ======= Мобильная версия (Bootstrap-слайдер) ======= -->
+                <div id="resultsCarousel" class="carousel slide d-lg-none results__slider" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="img/result-1.png" class="d-block w-100 result__image" alt="result-1">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/result-2.png" class="d-block w-100 result__image" alt="result-2">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/result-3.png" class="d-block w-100 result__image" alt="result-3">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/result-4.png" class="d-block w-100 result__image" alt="result-4">
+                        </div>
+
+                    </div>
+
+                    <!-- Индикаторы (точки под слайдами) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+
                 <button class="btn results__cta" onclick="CTAscrollToContacts()">Оставить заявку</button>
             </div>
         </section>
@@ -363,7 +420,7 @@
                     Оставьте свои контактные данные или свяжитесь с нами по любому из указанных контактов.
                 </p>
                 <div class="row">
-                    <div class="contacts__content col-lg-5 offset-lg-1">
+                    <div class="contacts__content col-12 col-lg-5 offset-lg-1">
                         <div class="essentials">
                             <a class="phone" href="tel:+79113454545">+7 911 345 45 45</a>
                             <a class="email" href="mailto:contact@siyaniye.ru">contact@siyaniye.ru</a>
@@ -377,7 +434,7 @@
                         <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f5a3db945aa5ed650c46a23dfc0eee69a845ba75d934b2688a488171d3e8aa0&amp;source=constructor" frameborder="0"></iframe>
                     </div>
 
-                    <form class="contacts__form col-lg-5 offset-lg-1 offset-xl-0" action="#" method="post"> 
+                    <form class="contacts__form col-12 col-lg-5 offset-lg-1 offset-xl-0" action="#" method="post"> 
                         <input class="form-input name" type="text" id="name" name="name" placeholder="Имя" required>
                         <input class="form-input phone" type="tel" id="phone" name="phone" placeholder="Телефон" required>
                         <textarea class="form-input comment" id="comment" name="comment" rows="3" placeholder="Комментарий"></textarea>

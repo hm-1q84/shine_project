@@ -27,6 +27,11 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 18px;
 }
+@media (max-width: 575px) {
+  body {
+    font-size: 16px;
+  }
+}
 
 /* Use Manrope for headings */
 h1, h2, h3, h4, h5, h6 {

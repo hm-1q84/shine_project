@@ -9,6 +9,17 @@ document.querySelectorAll('.review-card').forEach(card => {
     });
 });
 
+/* инициализация карусели результатов   */
+const resCarousel = document.querySelector('#resultsCarousel');
+const bsRCarousel = new bootstrap.Carousel(resCarousel);
+
+// обработка клика по карточке — листаем вперёд
+document.querySelectorAll('.results__slider').forEach(card => {
+    card.addEventListener('click', () => {
+        bsRCarousel.next();
+    });
+});
+
 // плавный скролл к секции контактов (форме оставления заявки)
 function CTAscrollToContacts() {
     document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });

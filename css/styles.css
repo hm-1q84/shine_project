@@ -27,6 +27,11 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 18px;
 }
+@media (max-width: 575px) {
+  body {
+    font-size: 16px;
+  }
+}
 
 /* Use Manrope for headings */
 h1, h2, h3, h4, h5, h6 {
@@ -73,10 +78,23 @@ h2 {
 .header {
   margin-top: 10px;
 }
+@media (max-width: 991px) {
+  .header .navbar__logo {
+    display: none;
+  }
+}
+.header .navbar__logo-mobile {
+  margin-left: 20px;
+}
 .header .navbar__menu {
   display: flex;
   gap: 50px;
   justify-content: center;
+}
+@media (max-width: 991px) {
+  .header .navbar__menu {
+    display: none;
+  }
 }
 .header .navbar__link {
   color: #000;
@@ -90,6 +108,11 @@ h2 {
   display: flex;
   justify-content: end;
 }
+@media (max-width: 991px) {
+  .header .navbar__cta {
+    display: none;
+  }
+}
 .header .navbar__cta .cta {
   width: 180px;
   height: 40px;
@@ -102,6 +125,11 @@ h2 {
   color: white;
   border: 2px solid #0261E1;
   transition: 0.3s;
+}
+@media (min-width: 992px) {
+  .header .navbar .mobile-version {
+    display: none;
+  }
 }
 .header .hero {
   display: flex;
@@ -142,6 +170,11 @@ h2 {
 }
 .main .services {
   margin-top: 200px;
+}
+@media (max-width: 575px) {
+  .main .services {
+    margin-top: 100px;
+  }
 }
 .main .services__header {
   text-align: center;
@@ -188,6 +221,11 @@ h2 {
 .main .features {
   margin-top: 200px;
 }
+@media (max-width: 575px) {
+  .main .features {
+    margin-top: 100px;
+  }
+}
 .main .features__header {
   text-align: center;
   margin-bottom: 80px;
@@ -230,6 +268,11 @@ h2 {
 .main .cleaners {
   margin-top: 200px;
 }
+@media (max-width: 575px) {
+  .main .cleaners {
+    margin-top: 100px;
+  }
+}
 .main .cleaners__header {
   text-align: center;
   margin-bottom: 80px;
@@ -239,12 +282,29 @@ h2 {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 575px) {
+  .main .cleaners .employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .main .cleaners .employee__name {
   margin-top: 15px;
   margin-bottom: 0;
 }
+@media (max-width: 575px) {
+  .main .cleaners .employee__avatar {
+    width: 140px;
+  }
+}
 .main .results {
   margin-top: 200px;
+}
+@media (max-width: 575px) {
+  .main .results {
+    margin-top: 100px;
+  }
 }
 .main .results__container {
   display: flex;
@@ -258,6 +318,30 @@ h2 {
 .main .results__row {
   margin-bottom: 40px;
 }
+@media (max-width: 991px) {
+  .main .results__row--desktop {
+    display: none;
+  }
+}
+.main .results .carousel-indicators [data-bs-target] {
+  background-color: #519BFF;
+}
+.main .results .carousel-indicators {
+  position: static;
+  margin-top: 20px;
+}
+.main .results .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c2c2c2;
+}
+.main .results .carousel-indicators button.active {
+  background-color: #4a8cff;
+}
+.main .results__slider {
+  margin-bottom: 40px;
+}
 .main .results .result__image {
   width: 100%;
 }
@@ -266,6 +350,11 @@ h2 {
 }
 .main .reviews {
   margin-top: 200px;
+}
+@media (max-width: 575px) {
+  .main .reviews {
+    margin-top: 100px;
+  }
 }
 .main .reviews__header {
   text-align: center;
@@ -341,6 +430,11 @@ h2 {
 .main .faq {
   margin-top: 200px;
 }
+@media (max-width: 575px) {
+  .main .faq {
+    margin-top: 100px;
+  }
+}
 .main .faq__header {
   text-align: center;
   margin-bottom: 80px;
@@ -379,6 +473,11 @@ h2 {
   margin-top: 200px;
   margin-bottom: 100px;
 }
+@media (max-width: 575px) {
+  .main .contacts {
+    margin-top: 100px;
+  }
+}
 .main .contacts__header {
   text-align: center;
   margin-bottom: 30px;
@@ -396,6 +495,12 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .main .contacts__content {
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 .main .contacts__content .essentials {
   display: flex;
@@ -485,7 +590,7 @@ h2 {
   padding: 65px 0;
   border-top: 2px solid #519BFF;
 }
-@media (max-width: 1999px) {
+@media (max-width: 1199px) {
   .footer .navbar__logo-image {
     display: block;
     margin: 0 auto 20px auto;
@@ -501,10 +606,17 @@ h2 {
   gap: 30px;
   justify-content: end;
 }
-@media (max-width: 1999px) {
+@media (max-width: 1199px) {
   .footer .navbar__additional {
     justify-content: center;
     margin-top: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .footer .navbar__additional {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
 .footer .navbar__link {
